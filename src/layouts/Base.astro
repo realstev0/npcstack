@@ -24,11 +24,14 @@ body{font-family:system-ui,sans-serif;margin:0;background:#0f1117;color:#e6e6e6}
 a{color:#7cc4ff}header,main,footer{max-width:1000px;margin:auto;padding:1rem}
 nav a{margin-right:1rem}.card{border:1px solid #2a2f3a;border-radius:8px;padding:1rem;margin:.6rem 0;background:#161a22}
 .tag{display:inline-block;font-size:.75rem;background:#232a36;border-radius:4px;padding:2px 6px;margin:2px}
-.pending{background:#4a3b12;color:#ffd77a}select,input,button{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
+.pending{background:#4a3b12;color:#ffd77a}
+.skip{position:absolute;left:-9999px;top:0;background:#7cc4ff;color:#0f1117;padding:.5rem 1rem;z-index:10}.skip:focus{left:1rem}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #ffd77a;outline-offset:2px}select,input,button{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
 </style></head><body>
+<a class="skip" href="#main">Skip to content</a>
 <header><a href={b+'/'} style="color:#fff;text-decoration:none"><strong>🎮 AgentLoadout</strong></a>: AI agents for game developers
-<nav><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/browse/'}>Engines & stages</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
-<main><slot/></main>
+<nav aria-label="Main"><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/browse/'}>Engines & stages</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
+<main id="main" tabindex="-1"><slot/></main>
 <footer><Newsletter/>
 <p><a href={`${REPO}/issues/new/choose`} rel="noopener">Suggest a tool / report a bug</a> (GitHub Issues)</p>
 <small>No sponsored listings right now. All scores are pending tests.</small></footer>
