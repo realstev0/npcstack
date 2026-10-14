@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { engines, stages, byEngine, byStage, ENGINE_NAMES, STAGE_NAMES, slug } from '../lib.js';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Browse AI tools by engine and production stage" description="Browse game-dev AI agents by engine (Unity, Unreal, Godot, Roblox and more) and by production stage (3D, 2D, animation, audio, code, NPCs, QA, localization).">
+<h1>Browse by engine and production stage</h1>
+<h2>Engines</h2><ul>{engines.map(e=><li><a href={`${b}/engine/${slug(e)}/`}>{ENGINE_NAMES[e]||e}</a> ({byEngine(e).length})</li>)}</ul>
+<h2>Production stages</h2><ul>{stages.map(s=><li><a href={`${b}/stage/${slug(s)}/`}>{STAGE_NAMES[s]||s}</a> ({byStage(s).length})</li>)}</ul></Base>

@@ -1,0 +1,28 @@
+name: Suggest a tool
+description: Suggest an AI agent or tool for game developers or players
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes: { label: Tool name }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: Official URL }
+    validations: { required: true }
+  - type: dropdown
+    id: audience
+    attributes: { label: Audience, options: [Game developers, Players, Both] }
+  - type: input
+    id: engines
+    attributes: { label: "Engines supported (e.g. Unity, Unreal, Godot)" }
+  - type: textarea
+    id: why
+    attributes: { label: What game-dev job does it help with? }
+  - type: checkboxes
+    id: affiliation
+    attributes:
+      label: Disclosure
+      options:
+        - label: I work for or am paid by this tool's company

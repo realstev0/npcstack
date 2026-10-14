@@ -1,18 +1,35 @@
 ---
-const { title = 'AgentLoadout' } = Astro.props;
+import { REPO } from '../lib.js';
+import Newsletter from '../components/Newsletter.astro';
+const { title, description, jsonld = null, ogType = 'website', noindex = false } = Astro.props;
 const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const fullTitle = `${title} | AgentLoadout`;
+const og = new URL(`${b}/og.png`, Astro.site).href;
 ---
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>{title} · AgentLoadout</title>
+<title>{fullTitle}</title>
+<meta name="description" content={description}/>
+{noindex ? <meta name="robots" content="noindex"/> : <link rel="canonical" href={canonical}/>}
+<meta property="og:type" content={ogType}/><meta property="og:site_name" content="AgentLoadout"/>
+<meta property="og:title" content={fullTitle}/><meta property="og:description" content={description}/>
+<meta property="og:url" content={canonical}/><meta property="og:image" content={og}/>
+<meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={fullTitle}/>
+<meta name="twitter:description" content={description}/><meta name="twitter:image" content={og}/>
+<link rel="sitemap" href={`${b}/sitemap-index.xml`}/>
+{jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)}/>}
 <style>
 body{font-family:system-ui,sans-serif;margin:0;background:#0f1117;color:#e6e6e6}
 a{color:#7cc4ff}header,main,footer{max-width:1000px;margin:auto;padding:1rem}
 nav a{margin-right:1rem}.card{border:1px solid #2a2f3a;border-radius:8px;padding:1rem;margin:.6rem 0;background:#161a22}
 .tag{display:inline-block;font-size:.75rem;background:#232a36;border-radius:4px;padding:2px 6px;margin:2px}
-.pending{background:#4a3b12;color:#ffd77a}select,input{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
+.pending{background:#4a3b12;color:#ffd77a}select,input,button{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
 </style></head><body>
-<header><strong>🎮 AgentLoadout</strong> — tested AI agents for game developers
-<nav><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
+<header><a href={b+'/'} style="color:#fff;text-decoration:none"><strong>🎮 AgentLoadout</strong></a>: AI agents for game developers
+<nav><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/browse/'}>Engines & stages</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
 <main><slot/></main>
-<footer><small>No sponsored listings currently. All scores are pending tests. Data: src/data/tools.json</small></footer>
+<footer><Newsletter/>
+<p><a href={`${REPO}/issues/new/choose`} rel="noopener">Suggest a tool / report a bug</a> (GitHub Issues)</p>
+<small>No sponsored listings right now. All scores are pending tests.</small></footer>
 </body></html>

@@ -1,0 +1,12 @@
+name: Report a bug or wrong listing
+description: Broken page, wrong info, dead link
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: page
+    attributes: { label: Page URL }
+  - type: textarea
+    id: what
+    attributes: { label: What is wrong, and what should it say? }
+    validations: { required: true }

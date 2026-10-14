@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Page not found" description="This page doesn't exist on AgentLoadout." noindex>
+<h1>404: this loadout slot is empty</h1>
+<p>That page doesn't exist. Try the <a href={b+'/'}>game-dev directory</a>, <a href={b+'/browse/'}>browse by engine and stage</a>, or the <a href={b+'/players/'}>players tab</a>.</p></Base>

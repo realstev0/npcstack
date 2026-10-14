@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro'; import List from '../components/List.astro';
+import { active, itemList } from '../lib.js';
+const items = active.filter(t=>t.audience.includes('gamedev')).sort((a,b)=>a.name.localeCompare(b.name));
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<Base title="AI agents for game developers"><h1>AI agents & tools for game developers</h1>
-<p>Filter by production stage and engine. Tools tagged "any" are engine-agnostic and show up under every engine filter.</p><List audience="gamedev"/></Base>
+<Base title="AI agents & tools for game developers" description={`A directory of ${items.length} AI agents and tools for game developers, filterable by engine (Unity, Unreal, Godot) and production stage. Every listing is clearly marked pending tests.`} jsonld={itemList('AI agents & tools for game developers', items, Astro.site, b)}>
+<h1>AI agents & tools for game developers</h1>
+<p>Filter by production stage and engine, or <a href={b+'/browse/'}>browse by engine and stage</a>. Tools tagged "Engine-agnostic" show up under every engine filter.</p><List audience="gamedev"/></Base>

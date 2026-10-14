@@ -1,4 +1,8 @@
 ---
 import Base from '../layouts/Base.astro'; import List from '../components/List.astro';
+import { active, itemList } from '../lib.js';
+const items = active.filter(t=>t.audience.includes('players')).sort((a,b)=>a.name.localeCompare(b.name));
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<Base title="AI agents for players"><h1>AI agents for players</h1><p>Early tab with a small starting set.</p><List audience="players"/></Base>
+<Base title="AI agents & tools for players" description="AI assistants and tools for gamers: PC performance tuning, match analytics, and AI game makers. A small, growing list." jsonld={itemList('AI agents & tools for players', items, Astro.site, b)}>
+<h1>AI agents for players</h1><p>Early tab with a small starting set.</p><List audience="players"/></Base>

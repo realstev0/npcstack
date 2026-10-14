@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro'; import Cards from '../../components/Cards.astro';
+import { engines, byEngine, ENGINE_NAMES, slug, itemList } from '../../lib.js';
+export function getStaticPaths(){ return engines.map(e=>({ params:{ slug: slug(e) }, props:{ e } })); }
+const { e } = Astro.props; const name = ENGINE_NAMES[e]||e; const items = byEngine(e);
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const intro = e==='any' ? 'These tools work independently of any particular engine: export assets, call an API, or use them alongside whatever engine you ship with.'
+ : `AI agents and tools that list ${name} support on their own websites: plugins, MCP servers, export formats or editor integrations.`;
+---
+<Base title={`AI tools for ${name}`} description={`${items.length} AI agents and tools for ${name} game development: ${items.slice(0,4).map(t=>t.name).join(', ')} and more. All scores pending tests.`} jsonld={itemList(`AI tools for ${name}`, items, Astro.site, b)}>
+<p><a href={b+'/browse/'}>Engines & stages</a> › {name}</p>
+<h1>AI tools for {name}</h1><p>{intro} Engine support is taken from vendor sites, not from our own tests yet. Every listing is <a href={b+'/scoring/'}>pending tests</a>.</p>
+{e!=='any' && <p>Also see <a href={b+'/engine/any/'}>engine-agnostic tools</a>, which work with {name} too.</p>}
+<Cards items={items}/></Base>
