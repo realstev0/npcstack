@@ -1,0 +1,28 @@
+---
+import tools from '../data/tools.json';
+const { audience } = Astro.props;
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const list = tools.filter(t => t.audience.includes(audience) && t.status==='active').sort((a,b)=>a.name.localeCompare(b.name));
+const stages = [...new Set(list.flatMap(t=>t.stages))].sort();
+const engines = [...new Set(list.flatMap(t=>t.engines))].sort();
+---
+<p>{list.length} listings. <span class="tag pending">Score: pending tests</span> on every listing. See <a href={b+'/scoring/'}>how scoring works</a>.</p>
+<div>
+<label>Stage <select id="stage"><option value="">All</option>{stages.map(s=><option>{s}</option>)}</select></label>
+<label>Engine <select id="engine"><option value="">All</option>{engines.map(e=><option>{e}</option>)}</select></label>
+<input id="q" placeholder="Search…"/> <span id="count"></span>
+</div>
+<div id="list">
+{list.map(t=>(
+<div class="card" data-stages={t.stages.join(' ')} data-engines={t.engines.join(' ')} data-text={(t.name+' '+t.tagline).toLowerCase()}>
+<a href={`${b}/tools/${t.id}/`}><strong>{t.name}</strong></a> {t.sponsored && <span class="tag">Sponsored</span>}
+<span class="tag pending">pending tests</span>
+<div>{t.tagline}</div>
+<div>{t.stages.map(s=><span class="tag">{s}</span>)} {t.engines.map(e=><span class="tag">⚙ {e}</span>)} <span class="tag">💲 {t.pricing.model}</span></div>
+</div>))}
+</div>
+<script is:inline>
+const f=()=>{const s=stage.value,e=engine.value,q=document.getElementById('q').value.toLowerCase();let n=0;
+document.querySelectorAll('#list .card').forEach(c=>{const en=c.dataset.engines.split(' ');const ok=(!s||c.dataset.stages.split(' ').includes(s))&&(!e||en.includes(e)||en.includes('any'))&&(!q||c.dataset.text.includes(q));c.style.display=ok?'':'none';n+=ok});count.textContent=n+' shown'};
+['stage','engine','q'].forEach(i=>document.getElementById(i).addEventListener('input',f));f();
+</script>

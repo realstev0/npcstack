@@ -1,0 +1,1341 @@
+[
+  {
+    "id": "meshy",
+    "name": "Meshy",
+    "url": "https://www.meshy.ai/",
+    "affiliate_url": null,
+    "tagline": "Text/image to 3D models with PBR texturing, auto-rigging and 600+ motion presets.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets",
+      "animation"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "godot",
+      "blender"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Site says no credit card required."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "tripo",
+    "name": "Tripo AI",
+    "url": "https://www.tripo3d.ai/",
+    "affiliate_url": null,
+    "tagline": "Text/image to 3D with quad 'Smart Mesh', auto-rig and PBR textures; exports GLB/FBX/OBJ/USD.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets",
+      "animation"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "godot",
+      "roblox",
+      "cocos"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Site states a free tier and an API."
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "sloyd",
+    "name": "Sloyd",
+    "url": "https://www.sloyd.ai/",
+    "affiliate_url": null,
+    "tagline": "Unlimited text/image-to-3D, sprite sheets, skyboxes, rigging; plugins for Unity/Unreal/Blender.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets",
+      "2d-art",
+      "animation"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "godot",
+      "roblox",
+      "blender"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "ludo",
+    "name": "Ludo.ai",
+    "url": "https://ludo.ai/",
+    "affiliate_url": null,
+    "tagline": "Game asset generator: sprite sheets, icons, UI, 3D, music, SFX; MCP and Unity plugin.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "2d-art",
+      "3d-assets",
+      "animation",
+      "audio",
+      "concept-design"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "godot"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "rosebud",
+    "name": "Rosebud AI",
+    "url": "https://rosebud.ai/",
+    "affiliate_url": null,
+    "tagline": "Browser game maker: describe a game or start from a template.",
+    "audience": [
+      "gamedev",
+      "players"
+    ],
+    "stages": [
+      "code",
+      "concept-design"
+    ],
+    "engines": [
+      "web"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "inworld",
+    "name": "Inworld AI",
+    "url": "https://inworld.ai/",
+    "affiliate_url": null,
+    "tagline": "Realtime TTS, STT, LLM router and voice API for games and consumer apps.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "npc-runtime",
+      "audio"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "usage",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": true,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "convai",
+    "name": "Convai",
+    "url": "https://convai.com/",
+    "affiliate_url": null,
+    "tagline": "Conversational, embodied AI characters (NPCs) with lipsync and actions.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "npc-runtime"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "web"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "nvidia-ace",
+    "name": "NVIDIA ACE",
+    "url": "https://developer.nvidia.com/ace",
+    "affiliate_url": null,
+    "tagline": "On-device AI models and UE5 plugins for speech, character intelligence and facial animation.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "npc-runtime",
+      "animation",
+      "audio"
+    ],
+    "engines": [
+      "unreal",
+      "custom"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": "UE plugins described as MIT-licensed."
+    },
+    "interfaces": {
+      "web": false,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io/",
+    "affiliate_url": null,
+    "tagline": "TTS, voice cloning, SFX, music and voice agents; API.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "audio",
+      "npc-runtime",
+      "localization"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "url": "https://suno.com/",
+    "affiliate_url": null,
+    "tagline": "Full songs (vocals + instrumental) from text prompts.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "audio"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Site: free up to 10 songs/day; Pro $10/mo; commercial use on paid plans."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "scenario",
+    "name": "Scenario",
+    "url": "https://www.scenario.com/",
+    "affiliate_url": null,
+    "tagline": "Multi-model image/video/3D/audio platform with custom style training, workflows, MCP and API.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "2d-art",
+      "3d-assets",
+      "marketing"
+    ],
+    "engines": [
+      "unity",
+      "unreal",
+      "blender"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": true,
+      "notes": "Site: 50 free daily credits; Starter from $10/mo."
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "layer",
+    "name": "Layer",
+    "url": "https://www.layer.ai/",
+    "affiliate_url": null,
+    "tagline": "Creative AI workspace for game studios: 384+ models, style training, workflows, API/MCP.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "2d-art",
+      "3d-assets",
+      "marketing"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "usage",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "leonardo",
+    "name": "Leonardo.Ai",
+    "url": "https://leonardo.ai/",
+    "affiliate_url": null,
+    "tagline": "Image and video generation with custom models; developer API.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "2d-art",
+      "concept-design",
+      "marketing"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "skybox",
+    "name": "Skybox AI (Blockade Labs)",
+    "url": "https://skybox.blockadelabs.com/",
+    "affiliate_url": null,
+    "tagline": "Generate 360\u00b0 skyboxes from a prompt and style.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "2d-art",
+      "3d-assets"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "kaedim",
+    "name": "Kaedim",
+    "url": "https://www.kaedim3d.com/",
+    "affiliate_url": null,
+    "tagline": "3D asset production for studios from sketches, references and art bibles.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "enterprise",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "cascadeur",
+    "name": "Cascadeur",
+    "url": "https://cascadeur.com/",
+    "affiliate_url": null,
+    "tagline": "AI-assisted keyframe animation: inbetweening, autoposing, ragdoll, retargeting, UE Live Link.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "animation"
+    ],
+    "engines": [
+      "unreal",
+      "any"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "unity-ai",
+    "name": "Unity AI tools",
+    "url": "https://unity.com/products/ai",
+    "affiliate_url": null,
+    "tagline": "In-editor assistant plus free Unity CLI, MCP server and official plugin for coding agents.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code"
+    ],
+    "engines": [
+      "unity"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Site: CLI, MCP server and plugin free; Personal assistant trial converts to $10/mo."
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": true,
+      "cli": true,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "unity-mcp",
+    "name": "Unity MCP (CoplayDev)",
+    "url": "https://github.com/CoplayDev/unity-mcp",
+    "affiliate_url": null,
+    "tagline": "Open-source MCP bridge letting AI assistants manage assets, scenes and scripts in the Unity Editor.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code"
+    ],
+    "engines": [
+      "unity"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "CoplayDev/unity-mcp",
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "godot-mcp",
+    "name": "Godot MCP",
+    "url": "https://github.com/Coding-Solo/godot-mcp",
+    "affiliate_url": null,
+    "tagline": "Open-source MCP server to launch the Godot editor, run projects and capture debug output.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code",
+      "qa"
+    ],
+    "engines": [
+      "godot"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "Coding-Solo/godot-mcp",
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "ludus",
+    "name": "Ludus AI",
+    "url": "https://ludusengine.com/",
+    "affiliate_url": null,
+    "tagline": "Unreal Editor plugin agent: Blueprints, C++, VFX, materials, animation, 3D, sound.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code",
+      "3d-assets",
+      "animation",
+      "audio"
+    ],
+    "engines": [
+      "unreal"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": false,
+      "notes": "Site: free plan has no credits; Pro $25/mo after 14-day trial."
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "gdevelop",
+    "name": "GDevelop",
+    "url": "https://gdevelop.io/",
+    "affiliate_url": null,
+    "tagline": "Open-source no-code 2D/3D engine with AI assistance for building mechanics.",
+    "audience": [
+      "gamedev",
+      "players"
+    ],
+    "stages": [
+      "code",
+      "concept-design"
+    ],
+    "engines": [
+      "gdevelop"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "url": "https://www.anthropic.com/claude-code",
+    "affiliate_url": null,
+    "tagline": "General coding agent in terminal/IDE; works with engine MCP servers.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": false,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": true,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "modl",
+    "name": "modl.ai",
+    "url": "https://modl.ai/",
+    "affiliate_url": null,
+    "tagline": "AI agents that playtest builds, find bugs and auto-generate bug reports; no integration.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "qa"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "enterprise",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "gridly",
+    "name": "Gridly",
+    "url": "https://www.gridly.com/",
+    "affiliate_url": null,
+    "tagline": "Localization CMS/TMS with AI translation; Unreal plugin.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "localization"
+    ],
+    "engines": [
+      "unreal",
+      "unity"
+    ],
+    "pricing": {
+      "model": "subscription",
+      "free_tier": null,
+      "notes": "Site: 14-day trial."
+    },
+    "interfaces": {
+      "web": true,
+      "api": true,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "machinations",
+    "name": "Machinations",
+    "url": "https://machinations.io/",
+    "affiliate_url": null,
+    "tagline": "Game economy and systems design: simulate loops from text descriptions.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "concept-design"
+    ],
+    "engines": [
+      "any"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "promethean",
+    "name": "Promethean AI",
+    "url": "https://www.prometheanai.com/",
+    "affiliate_url": null,
+    "tagline": "AI assistant for world building and asset libraries; plugins for Unreal, Unity, Maya, Blender.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets",
+      "concept-design"
+    ],
+    "engines": [
+      "unreal",
+      "unity",
+      "blender"
+    ],
+    "pricing": {
+      "model": "enterprise",
+      "free_tier": null,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "g-assist",
+    "name": "NVIDIA Project G-Assist",
+    "url": "https://www.nvidia.com/en-us/software/nvidia-app/g-assist/",
+    "affiliate_url": null,
+    "tagline": "On-device assistant on RTX PCs that optimizes game settings, monitors performance; plugins.",
+    "audience": [
+      "players"
+    ],
+    "stages": [
+      "player-tools"
+    ],
+    "engines": [
+      "pc"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  },
+  {
+    "id": "mobalytics",
+    "name": "Mobalytics",
+    "url": "https://mobalytics.gg/",
+    "affiliate_url": null,
+    "tagline": "Performance analytics and in-game overlays for LoL, TFT, Valorant.",
+    "audience": [
+      "players"
+    ],
+    "stages": [
+      "player-tools"
+    ],
+    "engines": [
+      "pc"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": ""
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null,
+    "sources": [
+      "manual-seed"
+    ],
+    "first_seen": "2026-10-13",
+    "url_verified": "2026-10-13",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-13",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active"
+  }
+]

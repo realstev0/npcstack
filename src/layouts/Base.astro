@@ -1,0 +1,18 @@
+---
+const { title = 'AgentLoadout' } = Astro.props;
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{title} · AgentLoadout</title>
+<style>
+body{font-family:system-ui,sans-serif;margin:0;background:#0f1117;color:#e6e6e6}
+a{color:#7cc4ff}header,main,footer{max-width:1000px;margin:auto;padding:1rem}
+nav a{margin-right:1rem}.card{border:1px solid #2a2f3a;border-radius:8px;padding:1rem;margin:.6rem 0;background:#161a22}
+.tag{display:inline-block;font-size:.75rem;background:#232a36;border-radius:4px;padding:2px 6px;margin:2px}
+.pending{background:#4a3b12;color:#ffd77a}select,input{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
+</style></head><body>
+<header><strong>🎮 AgentLoadout</strong> — tested AI agents for game developers
+<nav><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
+<main><slot/></main>
+<footer><small>No sponsored listings currently. All scores are pending tests. Data: src/data/tools.json</small></footer>
+</body></html>

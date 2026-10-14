@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="How scoring works"><h1>How tools are scored</h1>
+<p><strong>Current status: every listing is "pending tests".</strong> So far we have only confirmed that each tool's website loads (checked 2026-10-13). No hands-on tests have run yet, so no numeric scores are shown. We never invent results.</p>
+<h2>Planned score (0–100), shown only once measured</h2>
+<ul><li><b>Test (40):</b> automated checks we actually ran: site and signup reachable, free tier confirmed, docs/API/MCP present, engine plugin installs, and for open-source tools, whether the README quickstart installs in a sandbox.</li>
+<li><b>Capability (25):</b> documented interfaces (API, MCP, CLI, engine plugin) and engine coverage, with sources cited.</li>
+<li><b>Freshness (15):</b> recent releases, commits, or changelog entries.</li>
+<li><b>Traction (20):</b> public signals such as GitHub stars or Product Hunt votes, with the date measured.</li></ul>
+<p>Each sub-score will link to the raw check log and its date. Sponsorship never affects scores or ranking order.</p></Base>

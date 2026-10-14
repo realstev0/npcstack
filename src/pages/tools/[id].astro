@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro'; import tools from '../../data/tools.json';
+export function getStaticPaths(){ return tools.map(t=>({params:{id:t.id},props:{t}})); }
+const { t } = Astro.props; const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ifs = Object.entries(t.interfaces).filter(([,v])=>v).map(([k])=>k);
+---
+<Base title={t.name}><h1>{t.name}</h1>{t.sponsored && <p class="tag">Sponsored. See <a href={b+'/sponsored/'}>disclosure</a></p>}
+<p>{t.tagline}</p>
+<p><a href={t.affiliate_url || t.url} rel={t.affiliate_url ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.url}</a></p>
+<div class="card"><strong>Score:</strong> <span class="tag pending">pending tests</span>. No hands-on test has been run yet. <a href={b+'/scoring/'}>Methodology</a></div>
+<ul>
+<li>Audience: {t.audience.join(', ')}</li><li>Stages: {t.stages.join(', ')}</li><li>Engines: {t.engines.join(', ')}</li>
+<li>Pricing model: {t.pricing.model}; free tier: {t.pricing.free_tier===null?'not confirmed':t.pricing.free_tier?'yes (per vendor site)':'no'}{t.pricing.notes && ` (${t.pricing.notes})`}</li>
+<li>Interfaces (per vendor site): {ifs.length?ifs.join(', '):'not confirmed'}</li>
+<li>Open source: {t.open_source?'yes':'no / unknown'}{t.github && <> (<a href={`https://github.com/${t.github}`}>{t.github}</a>)</>}</li>
+<li>URL verified reachable: {t.url_verified} · Listed: {t.first_seen}</li></ul>
+<p><small>Descriptions summarize the vendor's own website. They are not independent test results.</small></p></Base>
