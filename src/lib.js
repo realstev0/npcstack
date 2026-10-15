@@ -12,3 +12,8 @@ export function itemList(name, items, site, base) {
   return { '@context':'https://schema.org', '@type':'ItemList', name, numberOfItems: items.length,
     itemListElement: items.map((t,i)=>({ '@type':'ListItem', position:i+1, name:t.name, url:new URL(`${base}/tools/${t.id}/`, site).href })) };
 }
+// BreadcrumbList structured data. crumbs: [[name, path], ...] where path is relative to base ('/' = home).
+export function breadcrumbs(crumbs, site, base) {
+  return { '@context':'https://schema.org', '@type':'BreadcrumbList',
+    itemListElement: crumbs.map(([name, path], i)=>({ '@type':'ListItem', position:i+1, name, item:new URL(`${base}${path}`, site).href })) };
+}

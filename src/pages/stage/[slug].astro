@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro'; import Cards from '../../components/Cards.astro';
-import { stages, byStage, STAGE_NAMES, slug, itemList } from '../../lib.js';
+import { stages, byStage, STAGE_NAMES, slug, itemList, breadcrumbs } from '../../lib.js';
 export function getStaticPaths(){ return stages.map(s=>({ params:{ slug: slug(s) }, props:{ s } })); }
 const { s } = Astro.props; const name = STAGE_NAMES[s]||s; const items = byStage(s);
 const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<Base title={`AI tools for ${name}`} description={`${items.length} AI agents and tools for ${name.toLowerCase()} in game production: ${items.slice(0,4).map(t=>t.name).join(', ')} and more. All scores pending tests.`} jsonld={itemList(`AI tools for ${name}`, items, Astro.site, b)}>
-<p><a href={b+'/browse/'}>Engines & stages</a> › {name}</p>
+<Base title={`AI tools for ${name}`} description={`${items.length} AI agents and tools for ${name.toLowerCase()} in game production: ${items.slice(0,4).map(t=>t.name).join(', ')} and more. All scores pending tests.`} jsonld={[itemList(`AI tools for ${name}`, items, Astro.site, b), breadcrumbs([['Directory','/'],['Engines & stages','/browse/'],[name,`/stage/${slug(s)}/`]], Astro.site, b)]}>
+<nav aria-label="Breadcrumb"><p><a href={b+'/browse/'}>Engines & stages</a> › <span aria-current="page">{name}</span></p></nav>
 <h1>AI tools for {name}</h1><p>AI agents and tools that help with {name.toLowerCase()} in a game production pipeline. Descriptions summarize each vendor's own site, and every listing is <a href={b+'/scoring/'}>pending tests</a>.</p>
 <Cards items={items}/></Base>

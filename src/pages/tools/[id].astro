@@ -1,18 +1,19 @@
 ---
 import Base from '../../layouts/Base.astro'; import tools from '../../data/tools.json';
-import { STAGE_NAMES, ENGINE_NAMES, slug, REPO } from '../../lib.js';
+import { STAGE_NAMES, ENGINE_NAMES, slug, REPO, breadcrumbs } from '../../lib.js';
 export function getStaticPaths(){ return tools.map(t=>({params:{id:t.id},props:{t}})); }
 const { t } = Astro.props; const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 const ifs = Object.entries(t.interfaces).filter(([,v])=>v).map(([k])=>k);
 const cat = {'3d-assets':'DesignApplication','2d-art':'DesignApplication',animation:'DesignApplication',audio:'MultimediaApplication',code:'DeveloperApplication',qa:'DeveloperApplication','player-tools':'GameApplication'}[t.stages[0]] || 'DeveloperApplication';
 // No ratings or reviews: none have been collected, so we never emit aggregateRating.
-const jsonld = { '@context':'https://schema.org', '@type':'SoftwareApplication', name:t.name, url:t.url, description:t.tagline, applicationCategory:cat,
+const app = { '@context':'https://schema.org', '@type':'SoftwareApplication', name:t.name, url:t.url, description:t.tagline, applicationCategory:cat,
   operatingSystem: t.interfaces.web ? 'Web' : undefined,
   ...(t.pricing.model==='free' ? { offers:{ '@type':'Offer', price:'0', priceCurrency:'USD' } } : {}) };
+const jsonld = [app, breadcrumbs([['Directory','/'],[t.name,`/tools/${t.id}/`]], Astro.site, b)];
 const desc = `${t.name}: ${t.tagline} Engines: ${t.engines.map(e=>ENGINE_NAMES[e]||e).join(', ')}. Score pending tests.`.slice(0,300);
 ---
 <Base title={`${t.name}: AI tool for game developers`} description={desc} jsonld={jsonld}>
-<p><a href={b+'/'}>Directory</a> › {t.name}</p>
+<nav aria-label="Breadcrumb"><p><a href={b+'/'}>Directory</a> › <span aria-current="page">{t.name}</span></p></nav>
 <h1>{t.name}</h1>{t.sponsored && <p class="tag">Sponsored. See <a href={b+'/sponsored/'}>disclosure</a></p>}
 <p>{t.tagline}</p>
 <p><a href={t.affiliate_url || t.url} rel={t.affiliate_url ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.url}</a></p>
