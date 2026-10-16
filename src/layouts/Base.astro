@@ -18,6 +18,8 @@ const og = new URL(`${b}/og.png`, Astro.site).href;
 <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={fullTitle}/>
 <meta name="twitter:description" content={description}/><meta name="twitter:image" content={og}/>
 <link rel="sitemap" href={`${b}/sitemap-index.xml`}/>
+<link rel="icon" type="image/svg+xml" href={`${b}/favicon.svg`}/>
+<meta name="theme-color" content="#0f1117"/><meta name="color-scheme" content="dark"/>
 {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)}/>}
 <style>
 body{font-family:system-ui,sans-serif;margin:0;background:#0f1117;color:#e6e6e6}
