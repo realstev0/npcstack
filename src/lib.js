@@ -1,5 +1,5 @@
 import tools from './data/tools.json';
-export const REPO = 'https://github.com/realstev0/agentloadout';
+export const REPO = 'https://github.com/realstev0/npcstack';
 export const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 export const ENGINE_NAMES = { unity:'Unity', unreal:'Unreal Engine', godot:'Godot', blender:'Blender', roblox:'Roblox', cocos:'Cocos', web:'Web / browser', gdevelop:'GDevelop', custom:'Custom engines', pc:'PC', any:'Engine-agnostic' };
 export const STAGE_NAMES = { '3d-assets':'3D assets', '2d-art':'2D art & sprites', animation:'Animation', audio:'Audio, music & voice', code:'Code & engine agents', 'concept-design':'Concept & game design', 'npc-runtime':'NPCs & runtime AI', qa:'QA & playtesting', localization:'Localization', marketing:'Marketing & store assets', 'player-tools':'Player tools' };
