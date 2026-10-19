@@ -36,10 +36,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -87,10 +87,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -139,10 +139,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -191,10 +191,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -239,10 +239,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -286,10 +286,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -334,10 +334,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -383,10 +383,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -431,10 +431,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -477,10 +477,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -527,10 +527,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -575,10 +575,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -623,10 +623,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -655,7 +655,7 @@
     "pricing": {
       "model": "unknown",
       "free_tier": null,
-      "notes": ""
+      "notes": "Listed URL returned HTTP 500 on 2026-10-19 (skybox.blockadelabs.com and skyboxai.com). Flagged dead; not deleted."
     },
     "interfaces": {
       "web": true,
@@ -670,10 +670,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
-      "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up": false,
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -681,7 +681,7 @@
       "total": null
     },
     "sponsored": false,
-    "status": "active"
+    "status": "dead"
   },
   {
     "id": "kaedim",
@@ -716,10 +716,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -763,10 +763,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -809,10 +809,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -855,10 +855,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -902,10 +902,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -951,10 +951,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -999,10 +999,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1045,10 +1045,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1091,10 +1091,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1138,10 +1138,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1184,10 +1184,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1233,10 +1233,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1279,10 +1279,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1325,10 +1325,10 @@
       "manual-seed"
     ],
     "first_seen": "2026-10-13",
-    "url_verified": "2026-10-13",
+    "url_verified": "2026-10-19",
     "checks": {
       "site_up": true,
-      "site_up_checked": "2026-10-13",
+      "site_up_checked": "2026-10-19",
       "hands_on_test": null
     },
     "score": {
@@ -1337,5 +1337,390 @@
     },
     "sponsored": false,
     "status": "active"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "google-playground",
+    "name": "Google Playground",
+    "url": "https://playground.google/",
+    "tagline": "Experimental Google Labs platform: create, play and share browser games from text prompts (no coding).",
+    "audience": [
+      "gamedev",
+      "players"
+    ],
+    "stages": [
+      "code",
+      "player-tools"
+    ],
+    "engines": [
+      "web"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Vendor: U.S. 18+; free tier with limited weekly tokens; Google One AI subscribers get higher limits."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": false,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "astrocade",
+    "name": "Astrocade",
+    "url": "https://www.astrocade.com/",
+    "tagline": "AI game maker with a hosted MCP so coding agents can build and publish games to the Astrocade feed.",
+    "audience": [
+      "gamedev",
+      "players"
+    ],
+    "stages": [
+      "code",
+      "player-tools"
+    ],
+    "engines": [
+      "web"
+    ],
+    "pricing": {
+      "model": "unknown",
+      "free_tier": null,
+      "notes": "Hosted MCP at https://mcp.astrocade.com/mcp (vendor blog Oct 12, 2026). Free-tier details not confirmed from homepage."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": null
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "summer-engine",
+    "name": "Summer Engine",
+    "url": "https://www.summerengine.com/",
+    "tagline": "AI-oriented 2D/3D game engine with hosted + local MCP and CLI so agents can build, generate assets and publish.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code",
+      "3d-assets",
+      "2d-art",
+      "audio"
+    ],
+    "engines": [
+      "custom"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Vendor: desktop app free with unlimited projects; paid plans for hosted Summer AI / advanced generation; MCP described as free."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": true,
+      "cli": true,
+      "engine_plugin": false
+    },
+    "open_source": false,
+    "github": "summerengine/summer"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "genex",
+    "name": "Genex",
+    "url": "https://genex.games/",
+    "tagline": "Open-source desktop harness for AI game development (Three.js browser games) with multi-agent build/review and optional asset plugins.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code",
+      "3d-assets",
+      "qa"
+    ],
+    "engines": [
+      "web"
+    ],
+    "pricing": {
+      "model": "freemium",
+      "free_tier": true,
+      "notes": "Vendor: app MIT open source; uses your Claude/ChatGPT subscription or local models; optional paid Genex asset plugin."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "genex-games/genex-desktop"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "playweld",
+    "name": "PlayWeld",
+    "url": "https://playweld.com/",
+    "tagline": "Open-source desktop IDE/workspace for game projects (Godot/Unity/Unreal) with notes, search and optional supervised AI workflows.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code",
+      "concept-design"
+    ],
+    "engines": [
+      "godot",
+      "unity",
+      "unreal"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": "Vendor: free Apache-2.0; connected AI providers may have their own costs. Testing prereleases for Windows/Linux."
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": true,
+      "cli": true,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "scarecr0w12/PlayWeld"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "unreal-mcp",
+    "name": "Unreal MCP (Epic)",
+    "url": "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+    "tagline": "Official Epic Unreal Editor MCP server so agents (Claude Code, Cursor, etc.) can drive actors, blueprints, materials, Niagara and more.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code"
+    ],
+    "engines": [
+      "unreal"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": "Experimental engine plugin (ModelContextProtocol + AllToolsets). Companion Claude Code skills plugin is MIT on GitHub."
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": true
+    },
+    "open_source": true,
+    "github": "EpicGames/unreal-engine-skills-for-claude-code-plugin"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "blender-mcp",
+    "name": "Blender MCP",
+    "url": "https://blendermcp.org/",
+    "tagline": "Community MCP that lets Claude/Cursor/ChatGPT/Ollama control Blender for modeling, materials, Poly Haven assets and Python execution.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "3d-assets",
+      "animation"
+    ],
+    "engines": [
+      "blender"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": "Community project (not Blender Foundation). Open source on GitHub (ahujasid/blender-mcp)."
+    },
+    "interfaces": {
+      "web": true,
+      "api": false,
+      "mcp": true,
+      "cli": false,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "ahujasid/blender-mcp"
+  },
+  {
+    "affiliate_url": null,
+    "sources": [
+      "weekly-scan-2026-10-19"
+    ],
+    "first_seen": "2026-10-19",
+    "url_verified": "2026-10-19",
+    "checks": {
+      "site_up": true,
+      "site_up_checked": "2026-10-19",
+      "hands_on_test": null
+    },
+    "score": {
+      "status": "pending-tests",
+      "total": null
+    },
+    "sponsored": false,
+    "status": "active",
+    "id": "gamedev-agent-skills",
+    "name": "Awesome Gamedev Agent Skills",
+    "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "tagline": "Portable Agent Skills pack (74+) for coding agents across Godot, Unity, Unreal, Phaser, three.js, Bevy and more, with an engine router.",
+    "audience": [
+      "gamedev"
+    ],
+    "stages": [
+      "code"
+    ],
+    "engines": [
+      "godot",
+      "unity",
+      "unreal",
+      "web",
+      "any"
+    ],
+    "pricing": {
+      "model": "free",
+      "free_tier": true,
+      "notes": "Open-source skill pack; install via npx skills add gamedev-skills/awesome-gamedev-agent-skills per project README / social posts."
+    },
+    "interfaces": {
+      "web": false,
+      "api": false,
+      "mcp": false,
+      "cli": true,
+      "engine_plugin": false
+    },
+    "open_source": true,
+    "github": "gamedev-skills/awesome-gamedev-agent-skills"
   }
 ]
