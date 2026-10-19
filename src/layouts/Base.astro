@@ -3,9 +3,23 @@ import { REPO } from '../lib.js';
 import Newsletter from '../components/Newsletter.astro';
 const { title, description, jsonld = null, ogType = 'website', noindex = false } = Astro.props;
 const b = import.meta.env.BASE_URL.replace(/\/$/, '');
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const path = Astro.url.pathname.replace(/\/$/, '') || '';
+const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonical = new URL(canonicalPath === '//' ? '/' : canonicalPath, Astro.site).href;
 const fullTitle = `${title} | NPCStack`;
 const og = new URL(`${b}/og.png`, Astro.site).href;
+const ogAlt = 'NPCStack — AI agents and tools for game developers';
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'NPCStack',
+  url: new URL(`${b}/`, Astro.site).href,
+  description: 'Directory of tested AI agents and tools for game developers, filterable by engine and production stage.',
+};
+const isCurrent = (href) => {
+  const h = href.replace(/\/$/, '');
+  return path === h || path === `${h}/` || (h === b && (path === b || path === '' || path === `${b}`));
+};
 ---
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{fullTitle}</title>
@@ -15,11 +29,14 @@ const og = new URL(`${b}/og.png`, Astro.site).href;
 <meta property="og:title" content={fullTitle}/><meta property="og:description" content={description}/>
 <meta property="og:url" content={canonical}/><meta property="og:image" content={og}/>
 <meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content={ogAlt}/>
 <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={fullTitle}/>
 <meta name="twitter:description" content={description}/><meta name="twitter:image" content={og}/>
+<meta name="twitter:image:alt" content={ogAlt}/>
 <link rel="sitemap" href={`${b}/sitemap-index.xml`}/>
 <link rel="icon" type="image/svg+xml" href={`${b}/favicon.svg`}/>
 <meta name="theme-color" content="#0f1117"/><meta name="color-scheme" content="dark"/>
+<script type="application/ld+json" set:html={JSON.stringify(websiteLd)}/>
 {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)}/>}
 <style>
 body{font-family:system-ui,sans-serif;margin:0;background:#0f1117;color:#e6e6e6}
@@ -29,10 +46,17 @@ nav a{margin-right:1rem}.card{border:1px solid #2a2f3a;border-radius:8px;padding
 .pending{background:#4a3b12;color:#ffd77a}
 .skip{position:absolute;left:-9999px;top:0;background:#7cc4ff;color:#0f1117;padding:.5rem 1rem;z-index:10}.skip:focus{left:1rem}
 a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #ffd77a;outline-offset:2px}select,input,button{background:#161a22;color:#eee;border:1px solid #333;padding:.4rem;margin:.2rem}
+a[aria-current="page"]{color:#fff;text-decoration:underline;text-underline-offset:3px}
 </style></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><a href={b+'/'} style="color:#fff;text-decoration:none"><strong>🎮 NPCStack</strong></a>: AI agents for game developers
-<nav aria-label="Main"><a href={b+'/'}>Game dev</a><a href={b+'/players/'}>Players</a><a href={b+'/browse/'}>Engines & stages</a><a href={b+'/scoring/'}>How scoring works</a><a href={b+'/sponsored/'}>Sponsored disclosure</a></nav></header>
+<nav aria-label="Main">
+<a href={b+'/'} aria-current={isCurrent(b+'/') ? 'page' : undefined}>Game dev</a>
+<a href={b+'/players/'} aria-current={isCurrent(b+'/players/') ? 'page' : undefined}>Players</a>
+<a href={b+'/browse/'} aria-current={isCurrent(b+'/browse/') ? 'page' : undefined}>Engines & stages</a>
+<a href={b+'/scoring/'} aria-current={isCurrent(b+'/scoring/') ? 'page' : undefined}>How scoring works</a>
+<a href={b+'/sponsored/'} aria-current={isCurrent(b+'/sponsored/') ? 'page' : undefined}>Sponsored disclosure</a>
+</nav></header>
 <main id="main" tabindex="-1"><slot/></main>
 <footer><Newsletter/>
 <p><a href={`${REPO}/issues/new/choose`} rel="noopener">Suggest a tool / report a bug</a> (GitHub Issues)</p>
