@@ -2,8 +2,18 @@
 import Base from '../layouts/Base.astro';
 import { engines, stages, byEngine, byStage, ENGINE_NAMES, STAGE_NAMES, slug } from '../lib.js';
 const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const hubs = [
+  ...engines.map(e => ({ name: `${ENGINE_NAMES[e]||e} AI tools`, path: `${b}/engine/${slug(e)}/` })),
+  ...stages.map(s => ({ name: `${STAGE_NAMES[s]||s} AI tools`, path: `${b}/stage/${slug(s)}/` })),
+];
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Browse game-dev AI tools by engine and production stage',
+  itemListElement: hubs.map((h, i) => ({ '@type': 'ListItem', position: i + 1, name: h.name, url: new URL(h.path, Astro.site).href })),
+};
 ---
-<Base title="Browse AI tools by engine and production stage" description="Browse game-dev AI agents by engine (Unity, Unreal, Godot, Roblox and more) and by production stage (3D, 2D, animation, audio, code, NPCs, QA, localization).">
+<Base title="Browse AI tools by engine and production stage" description="Browse game-dev AI agents by engine (Unity, Unreal, Godot, Roblox and more) and by production stage (3D, 2D, animation, audio, code, NPCs, QA, localization)." jsonld={jsonld}>
 <h1>Browse by engine and production stage</h1>
 <h2>Engines</h2><ul>{engines.map(e=><li><a href={`${b}/engine/${slug(e)}/`}>{ENGINE_NAMES[e]||e}</a> ({byEngine(e).length})</li>)}</ul>
 <h2>Production stages</h2><ul>{stages.map(s=><li><a href={`${b}/stage/${slug(s)}/`}>{STAGE_NAMES[s]||s}</a> ({byStage(s).length})</li>)}</ul></Base>
