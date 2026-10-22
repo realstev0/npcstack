@@ -8,7 +8,7 @@ Static Astro 5 site. Data: `src/data/tools.json` (28 listings, all `score.status
 **GitHub Pages:** add a workflow using `withastro/action`; `site` and `base` (`/npcstack`) are set in `astro.config.mjs`; change `base` there if the repo name changes.
 
 ## SEO
-Sitemap via @astrojs/sitemap (`/npcstack/sitemap-index.xml`), `public/robots.txt`, `public/og.png`, landing pages at `/engine/<slug>/` and `/stage/<slug>/`.
+Sitemap via @astrojs/sitemap (`/npcstack/sitemap-index.xml`), `public/robots.txt`, `public/og.png` (1200x630), favicons (`favicon.ico`, `favicon-32.png`, `apple-touch-icon.png`, `icon-512.png`) and header logo `logo-80.png`, all generated from the robot logo, landing pages at `/engine/<slug>/` and `/stage/<slug>/`.
 
 ## Newsletter
 `src/components/Newsletter.astro` is an inactive placeholder; see the comment there for the Buttondown embed.
