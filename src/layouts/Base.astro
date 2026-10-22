@@ -62,7 +62,9 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .brand{display:inline-flex;align-items:center;gap:.5rem;color:#fff;text-decoration:none;vertical-align:middle}.brand img{border-radius:6px}
 a[aria-current="page"]{color:#fff;text-decoration:underline;text-underline-offset:3px}
-</style></head><body>
+</style>
+<script is:inline data-goatcounter="https://npcstack.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header><a class="brand" href={b+'/'}><img src={`${b}/logo-80.png`} width="36" height="36" alt="" decoding="async"/><strong>NPCStack</strong></a>: AI agents for game developers
 <nav aria-label="Main">
@@ -75,5 +77,6 @@ a[aria-current="page"]{color:#fff;text-decoration:underline;text-underline-offse
 <main id="main" tabindex="-1"><slot/></main>
 <footer><Newsletter/>
 <p><a href={`${REPO}/issues/new/choose`} rel="noopener">Suggest a tool / report a bug</a> (GitHub Issues)</p>
-<small>No sponsored listings right now. All scores are pending tests.</small></footer>
+<small>No sponsored listings right now. All scores are pending tests.</small>
+<p><small>We use <a href="https://www.goatcounter.com/" rel="noopener">GoatCounter</a>, a privacy-friendly analytics tool, to count page views. It sets no cookies and does no personal tracking.</small></p></footer>
 </body></html>
