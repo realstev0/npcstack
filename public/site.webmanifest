@@ -1,0 +1,14 @@
+{
+  "name": "NPCStack: AI agents & tools for game developers",
+  "short_name": "NPCStack",
+  "description": "A directory of AI agents and tools for game developers, filterable by engine and production stage.",
+  "start_url": "/npcstack/",
+  "scope": "/npcstack/",
+  "display": "browser",
+  "background_color": "#0f1117",
+  "theme_color": "#0f1117",
+  "icons": [
+    { "src": "/npcstack/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/npcstack/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
