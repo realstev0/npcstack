@@ -14,9 +14,9 @@ const desc = `${t.name}: ${t.tagline} Engines: ${t.engines.map(e=>ENGINE_NAMES[e
 ---
 <Base title={`${t.name}: AI tool for game developers`} description={desc} jsonld={jsonld}>
 <nav aria-label="Breadcrumb"><p><a href={b+'/'}>Directory</a> › <span aria-current="page">{t.name}</span></p></nav>
-<h1>{t.name}</h1>{t.sponsored && <p class="tag">Sponsored. See <a href={b+'/sponsored/'}>disclosure</a></p>}
+<h1>{t.name}</h1>{t.featured && <p class="tag featured">★ Featured: paid placement. It is listed first in its categories, and its score is unaffected. See <a href={b+'/sponsored/'}>disclosure</a></p>}{t.sponsored && <p class="tag">Sponsored. See <a href={b+'/sponsored/'}>disclosure</a></p>}
 <p>{t.tagline}</p>
-<p><a href={t.affiliate_url || t.url} rel={t.affiliate_url ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.url} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></p>
+<p><a href={t.affiliate_url || t.url} rel={(t.affiliate_url || t.featured) ? 'sponsored noopener' : 'noopener'} target="_blank">Visit {t.url} <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></p>
 <div class="card"><strong>Score:</strong> <span class="tag pending">pending tests</span>. No hands-on test has been run yet. <a href={b+'/scoring/'}>Methodology</a></div>
 <ul>
 <li>Audience: {t.audience.join(', ')}</li>

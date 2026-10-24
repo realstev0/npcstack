@@ -1,11 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Sponsored listings & affiliate disclosure" description="How NPCStack labels sponsored listings and affiliate links. Payment never affects scores or rankings. There are currently no sponsored listings."><h1>Sponsored listings & affiliate disclosure</h1>
-<p><strong>Right now NPCStack has no sponsored listings and no affiliate links.</strong></p>
+<Base title="Sponsored listings & affiliate disclosure" description="How NPCStack labels sponsored listings and affiliate links. Payment never affects scores. Paid Featured listings are labelled and sorted first. There are currently no sponsored or featured listings."><h1>Sponsored listings & affiliate disclosure</h1>
+<p><strong>Right now NPCStack has no sponsored or featured listings and no affiliate links.</strong></p>
+<h2>Featured listings (paid)</h2>
+<p>A vendor can pay for a <span class="tag featured">★ Featured (paid)</span> placement. It shows that badge and is listed first within its categories (stage and engine pages and the main lists). That is all it buys. Its score, test results and description are produced the same way as every other listing, and its outbound link is marked <code>rel="sponsored"</code>. Each listing's <code>featured</code> field is public in our data file. See <a href={import.meta.env.BASE_URL.replace(/\/$/, '')+'/advertise/'}>Advertise</a>.</p>
 <h2>When we add them</h2>
 <ul><li>Sponsored listings get a visible <span class="tag">Sponsored</span> label on cards and tool pages, and appear only in clearly marked sponsored slots.</li>
-<li>Paying never changes a tool's score, test results, or organic ranking. Sponsored tools go through the same tests as everyone else.</li>
+<li>Paying never changes a tool's score or test results. The only ordering change is that labelled Featured listings sort first within their categories. Sponsored tools go through the same tests as everyone else.</li>
 <li>Affiliate links are marked with <code>rel="sponsored"</code> and disclosed on the tool page. We may earn a commission at no extra cost to you.</li>
 <li>Each listing's <code>sponsored</code> and <code>affiliate_url</code> fields are public in our data file.</li>
 <li>We follow the FTC endorsement guides on clear and conspicuous disclosure.</li></ul></Base>

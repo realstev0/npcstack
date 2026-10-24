@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { REPO, active } from '../lib.js';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const inquiry = `${REPO}/issues/new?template=sponsor_inquiry.yml`;
+// TODO(owner): replace with a real inbox before merging, or delete this line and the mailto link below.
+const MAILTO = 'mailto:TODO-sponsor-email@example.com?subject=NPCStack%20Featured%20placement';
+const FOUNDING_SLOTS = 5;
+const taken = active.filter(t => t.featured).length;
+---
+<Base title="Advertise on NPCStack: get featured" description="Founding Featured placement on NPCStack, a directory of AI tools for game developers. $49/month, labelled, honest, and scores stay independent.">
+<h1>Advertise / Get featured</h1>
+<p>NPCStack is an independent, free directory of AI agents and tools for game developers, sorted by engine and production stage. Founding sponsors help keep it free and independent.</p>
+
+<div class="card">
+<h2>Founding Featured</h2>
+<p><strong>$49 / month</strong>, cancel anytime. Or <strong>$99 for the first 3 months</strong>, prepaid.</p>
+<p>Limited to {FOUNDING_SLOTS} founding sponsors, with at most one per main category. <span class="tag">{Math.max(FOUNDING_SLOTS - taken, 0)} of {FOUNDING_SLOTS} slots open</span></p>
+<ul>
+<li>A clearly labelled <span class="tag featured">★ Featured (paid)</span> badge on your card and tool page.</li>
+<li>Listed <strong>first within your categories</strong>: stage pages, engine pages and the main directory lists.</li>
+<li>Sponsored mentions (marked as sponsored) in @npcstack posts on X.</li>
+<li>A monthly report of the real numbers for your listing from our privacy-friendly analytics.</li>
+<li>Founding price locked for 12 months while you stay subscribed.</li>
+<li>Full refund of the current month if you're not happy within the first 14 days.</li>
+</ul>
+</div>
+
+<h2>What we won't promise</h2>
+<ul>
+<li><strong>No traffic guarantees.</strong> NPCStack launched in October 2026 and analytics only started on Oct 21, so we don't have traffic history to show you yet. We'll share real numbers monthly instead of making estimates.</li>
+<li><strong>No influence on scores.</strong> Featured tools get the same tests and the same <span class="tag pending">pending tests</span> status as everyone else. Paying buys the badge and the position, nothing else. See the <a href={b+'/sponsored/'}>disclosure</a> and <a href={b+'/scoring/'}>how scoring works</a>.</li>
+<li><strong>No hidden ads.</strong> Every paid placement is labelled, and outbound links from it are marked <code>rel="sponsored"</code>.</li>
+</ul>
+
+<h2>Get in touch</h2>
+<p><a href={inquiry} rel="noopener">Open a "Sponsor inquiry" on GitHub</a>. It is public, so leave out anything confidential.</p>
+<p>Or email: <a href={MAILTO}>sponsor email (TODO)</a></p>
+<p><small>Not listed yet? <a href={`${REPO}/issues/new?template=suggest_tool.yml`} rel="noopener">Suggest your tool</a> for free first. Listing is always free; Featured is optional.</small></p>
+</Base>
