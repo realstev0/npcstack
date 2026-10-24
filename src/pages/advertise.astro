@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { REPO, active } from '../lib.js';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
+const inquiry = `${REPO}/issues/new?template=sponsor_inquiry.yml`;
+const BUY_MONTHLY = 'https://buy.stripe.com/eVq00j2j4906aMH26J8Vi00';
+const BUY_PREPAID = 'https://buy.stripe.com/fZucN56zk0tAbQL12F8Vi01';
+const FOUNDING_SLOTS = 5;
+const taken = active.filter(t => t.featured).length;
+---
+<Base title="Advertise on NPCStack: get featured" description="Founding Featured placement on NPCStack, a directory of AI tools for game developers. $49/month or $99 for the first 3 months. Clearly labelled, and scores stay independent.">
+<style>
+.buy{display:inline-block;background:#7cc4ff;color:#0f1117;font-weight:700;text-decoration:none;border-radius:6px;padding:.7rem 1.1rem;margin:.3rem .6rem .3rem 0}
+.buy:hover{background:#a9d9ff}.buy.alt{background:#232a36;color:#e6e6e6;border:1px solid #7cc4ff}
+</style>
+<h1>Advertise / Get featured</h1>
+<p>NPCStack is an independent, free directory of AI agents and tools for game developers, sorted by engine and production stage. Founding sponsors help keep it free and independent.</p>
+
+<div class="card">
+<h2>Founding Featured</h2>
+<p>Limited to <strong>{FOUNDING_SLOTS} founding sponsors</strong>. <span class="tag">{Math.max(FOUNDING_SLOTS - taken, 0)} of {FOUNDING_SLOTS} slots open</span></p>
+<p>
+<a class="buy" href={BUY_MONTHLY} rel="noopener">Founding Featured — $49/month</a>
+<a class="buy alt" href={BUY_PREPAID} rel="noopener">First 3 months — $99 prepaid</a>
+</p>
+<p><small>Secure checkout by Stripe. Checkout asks which tool to feature. Your Featured placement goes live within 1 business day.</small></p>
+<h3>What you get</h3>
+<ul>
+<li>A clearly labelled <span class="tag featured">★ Featured (paid)</span> badge on your card and tool page.</li>
+<li>The <strong>top spot in your categories</strong>: stage pages, engine pages and the main directory lists.</li>
+<li>Sponsored-marked mentions in @npcstack posts on X.</li>
+<li>A monthly report of the real numbers for your listing from our privacy-friendly analytics.</li>
+<li>Founding price <strong>locked for 12 months</strong> while you stay subscribed. Cancel anytime.</li>
+<li><strong>14-day refund:</strong> if you're not happy within the first 14 days, we refund the current month.</li>
+</ul>
+</div>
+
+<h2>What we won't promise</h2>
+<ul>
+<li><strong>No traffic guarantees.</strong> NPCStack launched in October 2026 and analytics only started on Oct 21, so we don't have traffic history to show you yet. We'll share real numbers monthly instead of making estimates.</li>
+<li><strong>Scores stay independent.</strong> Featured tools get the same tests and the same <span class="tag pending">pending tests</span> status as everyone else. Paying buys the badge and the position, nothing else. See the <a href={b+'/sponsored/'}>disclosure</a> and <a href={b+'/scoring/'}>how scoring works</a>.</li>
+<li><strong>No hidden ads.</strong> Every paid placement is labelled, and outbound links from it are marked <code>rel="sponsored"</code>.</li>
+</ul>
+
+<h2>Questions first?</h2>
+<p><a href={inquiry} rel="noopener">Open a "Sponsor inquiry" on GitHub</a>. It is public, so leave out anything confidential.</p>
+<p><small>Not listed yet? <a href={`${REPO}/issues/new?template=suggest_tool.yml`} rel="noopener">Suggest your tool</a> for free first. Listing is always free; Featured is optional.</small></p>
+</Base>

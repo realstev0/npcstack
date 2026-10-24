@@ -5,7 +5,7 @@ const { items } = Astro.props; const b = import.meta.env.BASE_URL.replace(/\/$/,
 <div id="list">
 {items.map(t=>(
 <div class="card" data-stages={t.stages.join(' ')} data-engines={t.engines.join(' ')} data-text={(t.name+' '+t.tagline).toLowerCase()}>
-<a href={`${b}/tools/${t.id}/`}><strong>{t.name}</strong></a> {t.sponsored && <span class="tag">Sponsored</span>}
+<a href={`${b}/tools/${t.id}/`}><strong>{t.name}</strong></a> {t.featured && <a class="tag featured" href={`${b}/sponsored/`} title="Paid placement: listed first in its categories. Does not affect the score.">★ Featured (paid)</a>} {t.sponsored && <span class="tag">Sponsored</span>}
 <span class="tag pending">pending tests</span>
 <div>{t.tagline}</div>
 <div>{t.stages.map(s=><a class="tag" href={`${b}/stage/${slug(s)}/`}>{STAGE_NAMES[s]||s}</a>)} {t.engines.map(e=><a class="tag" href={`${b}/engine/${slug(e)}/`}>⚙ {ENGINE_NAMES[e]||e}</a>)} <span class="tag">💲 {t.pricing.model}</span></div>

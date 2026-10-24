@@ -1,0 +1,39 @@
+name: Sponsor inquiry
+description: Ask about a Featured (paid) placement for your tool on NPCStack
+title: "Sponsor inquiry: "
+labels: ["sponsor-inquiry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. Issues are **public**, so don't include anything confidential. We'll reply here and can move to email if you prefer.
+        Featured placement never changes a tool's score. See https://realstev0.github.io/npcstack/sponsored/
+  - type: input
+    id: tool
+    attributes: { label: Tool name and official URL }
+    validations: { required: true }
+  - type: input
+    id: listing
+    attributes: { label: "Your NPCStack listing URL (if already listed)" }
+  - type: dropdown
+    id: offer
+    attributes:
+      label: Which offer?
+      options: ["Founding Featured: $49/month", "Founding Featured: $99 for the first 3 months", "Not sure yet / questions"]
+    validations: { required: true }
+  - type: input
+    id: contact
+    attributes: { label: "Best way to reach you (a public handle, or say 'reply here')" }
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else? (categories you care about, timing) }
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand Featured is a labelled paid placement and does not affect scores or test results
+          required: true
+        - label: I understand NPCStack is new and does not guarantee any traffic or clicks
+          required: true

@@ -47,6 +47,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -98,6 +99,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -150,6 +152,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -202,6 +205,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -250,6 +254,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -297,6 +302,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -345,6 +351,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -394,6 +401,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -442,6 +450,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -488,6 +497,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -538,6 +548,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -586,6 +597,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -634,6 +646,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -681,6 +694,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "dead"
   },
   {
@@ -727,6 +741,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -774,6 +789,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -820,6 +836,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -866,6 +883,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -913,6 +931,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -962,6 +981,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1010,6 +1030,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1056,6 +1077,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1102,6 +1124,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1149,6 +1172,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1195,6 +1219,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1244,6 +1269,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1290,6 +1316,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1336,6 +1363,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active"
   },
   {
@@ -1355,6 +1383,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "google-playground",
     "name": "Google Playground",
@@ -1403,6 +1432,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "astrocade",
     "name": "Astrocade",
@@ -1451,6 +1481,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "summer-engine",
     "name": "Summer Engine",
@@ -1500,6 +1531,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "genex",
     "name": "Genex",
@@ -1548,6 +1580,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "playweld",
     "name": "PlayWeld",
@@ -1597,6 +1630,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "unreal-mcp",
     "name": "Unreal MCP (Epic)",
@@ -1643,6 +1677,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "blender-mcp",
     "name": "Blender MCP",
@@ -1690,6 +1725,7 @@
       "total": null
     },
     "sponsored": false,
+    "featured": false,
     "status": "active",
     "id": "gamedev-agent-skills",
     "name": "Awesome Gamedev Agent Skills",
