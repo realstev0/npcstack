@@ -408,7 +408,7 @@
     "id": "elevenlabs",
     "name": "ElevenLabs",
     "url": "https://elevenlabs.io/",
-    "affiliate_url": null,
+    "affiliate_url": "https://try.elevenlabs.io/0i67tqc8zrz3",
     "tagline": "TTS, voice cloning, SFX, music and voice agents; API.",
     "audience": [
       "gamedev"

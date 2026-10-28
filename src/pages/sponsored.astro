@@ -1,13 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<Base title="Sponsored listings & affiliate disclosure" description="How NPCStack labels sponsored listings and affiliate links. Payment never affects scores. Paid Featured listings are labelled and sorted first. There are currently no sponsored or featured listings."><h1>Sponsored listings & affiliate disclosure</h1>
-<p><strong>Right now NPCStack has no sponsored or featured listings and no affiliate links.</strong></p>
+<Base title="Sponsored listings & affiliate disclosure" description="How NPCStack labels sponsored listings and affiliate links. The ElevenLabs Visit link may use an affiliate URL. Scores stay independent. Affiliate outbound links use rel=sponsored. Payment never affects scores. Paid Featured listings are labelled and sorted first. There are currently no sponsored or featured listings."><h1>Sponsored listings & affiliate disclosure</h1>
+<p><strong>NPCStack has no sponsored or featured listings right now.</strong> The <a href={b+'/tools/elevenlabs/'}>ElevenLabs</a> Visit link may use an affiliate URL. Scores stay independent of that link, and the affiliate outbound link uses <code>rel="sponsored"</code>.</p>
+<h2>Affiliate links</h2>
+<p>The ElevenLabs Visit link may use the affiliate URL <code>https://try.elevenlabs.io/0i67tqc8zrz3</code>. If you sign up or buy through it, NPCStack may earn a commission at no extra cost to you. The score, test results, and description stay independent of the link. That outbound link uses <code>rel="sponsored"</code>. ElevenLabs is the only listing with an affiliate URL. Each listing's <code>affiliate_url</code> is public in our data file.</p>
 <h2>Featured listings (paid)</h2>
-<p>A vendor can pay for a <span class="tag featured">★ Featured (paid)</span> placement. It shows that badge and is listed first within its categories (stage and engine pages and the main lists). That is all it buys. Its score, test results and description are produced the same way as every other listing, and its outbound link is marked <code>rel="sponsored"</code>. Each listing's <code>featured</code> field is public in our data file. See <a href={import.meta.env.BASE_URL.replace(/\/$/, '')+'/advertise/'}>Advertise</a>.</p>
-<h2>When we add them</h2>
-<ul><li>Sponsored listings get a visible <span class="tag">Sponsored</span> label on cards and tool pages, and appear only in clearly marked sponsored slots.</li>
+<p>A vendor can pay for a <span class="tag featured">★ Featured (paid)</span> placement. It shows that badge and is listed first within its categories (stage and engine pages and the main lists). That is all it buys. Its score, test results and description are produced the same way as every other listing, and its outbound link is marked <code>rel="sponsored"</code>. Each listing's <code>featured</code> field is public in our data file. See <a href={b+'/advertise/'}>Advertise</a>.</p>
+<h2>Sponsored listings</h2>
+<ul><li>Sponsored listings get a visible <span class="tag">Sponsored</span> label on cards and tool pages, and appear only in clearly marked sponsored slots. There are none right now.</li>
 <li>Paying never changes a tool's score or test results. The only ordering change is that labelled Featured listings sort first within their categories. Sponsored tools go through the same tests as everyone else.</li>
-<li>Affiliate links are marked with <code>rel="sponsored"</code> and disclosed on the tool page. We may earn a commission at no extra cost to you.</li>
 <li>Each listing's <code>sponsored</code> and <code>affiliate_url</code> fields are public in our data file.</li>
 <li>We follow the FTC endorsement guides on clear and conspicuous disclosure.</li></ul></Base>
